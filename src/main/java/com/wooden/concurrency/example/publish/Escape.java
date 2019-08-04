@@ -15,6 +15,7 @@ public class Escape {
     }
 
     private class InnerClass{
+        // 此对象在初始化完成前就被其他线程所访问到了
         public InnerClass(){
             log.info("{}",Escape.this.thisCanBeEscape);
         }

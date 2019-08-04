@@ -1,8 +1,6 @@
 package com.wooden.concurrency.example.singleton;
 
-import com.wooden.concurrency.annoations.NotRecommend;
 import com.wooden.concurrency.annoations.NotThreadSafe;
-import com.wooden.concurrency.annoations.ThreadSafe;
 
 /**
  *  懒汉模式-> 双重同步锁单例模式

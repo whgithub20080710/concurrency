@@ -11,7 +11,7 @@ public class VectorExample2 {
 
     public static void main(String[] args) {
 
-        while (true) {
+        while (1 == 1) {
 
             for (int i = 0; i < 10; i++) {
                 vector.add(i);

@@ -1,6 +1,5 @@
 package com.wooden.concurrency.example.count;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import com.wooden.concurrency.annoations.NotThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
@@ -36,6 +35,7 @@ public class CountExample1 {
                 countDownLatch.countDown();
             });
         }
+        // 避免出现其他线程没执行完，主线程就执行完了
         countDownLatch.await();
         executorService.shutdown();
         log.info("count:{}",count);
